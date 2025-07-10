@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Search</title>
+    <link rel="stylesheet" href="image_search.css" />
+  </head>
+  <body>
+    <div class="links">
+      <a href="index.html">Google search</a>
+    </div>
+    <br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/500px-Google_2015_logo.svg.png"
+      alt="GOOGLE"
+      width="300px"
+    />
+    <br />
+    <div class="search">
+      <form action="https://www.google.com/search">
+        <div class="search_bar">
+          <input
+            type="text"
+            name="q"
+            placeholder="Search Google or type a URL"
+          />
+        </div>
+        <input type="hidden" name="tbm" value="isch" />
+        <!-- 
+  tbm parameter usage:
+    - "tbm" stands for "type of search" in Google queries.
+    - This hidden input tells Google to show a specific type of search result.
+    - Common values:
+        * isch  →  Image search results
+        * vid   →  Video search results
+        * nws   →  News search results
+        * shop  →  Shopping search results
+    - Here, "isch" ensures the form submits a Google Image search.
+-->
+        <div class="search_button">
+          <input type="submit" value="Google search" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

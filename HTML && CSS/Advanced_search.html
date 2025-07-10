@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Search</title>
+    <link rel="stylesheet" href="advanced_ssearch.css" />
+  </head>
+  <body>
+    <div class="links">
+      <a href="index.html">Google search</a>
+    </div>
+    <br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/500px-Google_2015_logo.svg.png"
+      alt="GOOGLE"
+      width="100px"
+    />
+
+    <h2>Advanced Search</h2>
+
+    <br />
+    <hr />
+    <div class="search">
+      <form action="https://www.google.com/search">
+        <div class="advanced_search">
+          <div class="form_row">
+            <label>all these words:</label>
+            <input type="text" name="as_q" />
+          </div>
+          <div class="form_row">
+            <label>this exact word or phrase:</label>
+            <input type="text" name="as_epq" />
+          </div>
+          <div class="form_row">
+            <label>any of these words:</label>
+            <input type="text" name="as_oq" />
+          </div>
+          <div class="form_row">
+            <label>none of these words:</label>
+            <input type="text" name="as_eq" />
+          </div>
+        </div>
+
+        <div class="search_button">
+          <input type="submit" value="Advanced Search" />
+        </div>
+      </form>
+      <hr />
+    </div>
+  </body>
+</html>
